@@ -2,6 +2,8 @@
 
 This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 8.0.3.
 
+![Swagger Angular](https://raw.githubusercontent.com/dinohorvat/swagger-editor-angular8/blob/master/assets/swagger-angular.png)
+
 ## How to implement swagger-editor in your project
 ### Dependecies
     npm i swagger-editor-dist --save
