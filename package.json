@@ -1,5 +1,5 @@
 {
-  "name": "swagger-editor",
+  "name": "angular-swagger-editor",
   "version": "0.0.0",
   "scripts": {
     "ng": "ng",
@@ -20,6 +20,8 @@
     "@angular/platform-browser-dynamic": "~8.0.1",
     "@angular/router": "~8.0.1",
     "rxjs": "~6.4.0",
+    "swagger-editor": "^3.6.32",
+    "swagger-editor-dist": "^3.6.32",
     "tslib": "^1.9.0",
     "zone.js": "~0.9.1"
   },

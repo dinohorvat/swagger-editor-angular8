@@ -3,7 +3,7 @@
   "version": 1,
   "newProjectRoot": "projects",
   "projects": {
-    "swagger-editor": {
+    "angular-swagger-editor": {
       "projectType": "application",
       "schematics": {},
       "root": "",
@@ -13,7 +13,7 @@
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
-            "outputPath": "dist/swagger-editor",
+            "outputPath": "dist/angular-swagger-editor",
             "index": "src/index.html",
             "main": "src/main.ts",
             "polyfills": "src/polyfills.ts",
@@ -24,9 +24,13 @@
               "src/assets"
             ],
             "styles": [
+              "node_modules/swagger-editor-dist/swagger-editor.css",
               "src/styles.css"
             ],
-            "scripts": []
+            "scripts": [
+              "node_modules/swagger-editor-dist/swagger-editor-bundle.js",
+              "node_modules/swagger-editor-dist/swagger-editor-standalone-preset.js"
+            ]
           },
           "configurations": {
             "production": {
@@ -58,18 +62,18 @@
         "serve": {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "swagger-editor:build"
+            "browserTarget": "angular-swagger-editor:build"
           },
           "configurations": {
             "production": {
-              "browserTarget": "swagger-editor:build:production"
+              "browserTarget": "angular-swagger-editor:build:production"
             }
           }
         },
         "extract-i18n": {
           "builder": "@angular-devkit/build-angular:extract-i18n",
           "options": {
-            "browserTarget": "swagger-editor:build"
+            "browserTarget": "angular-swagger-editor:build"
           }
         },
         "test": {
@@ -106,15 +110,15 @@
           "builder": "@angular-devkit/build-angular:protractor",
           "options": {
             "protractorConfig": "e2e/protractor.conf.js",
-            "devServerTarget": "swagger-editor:serve"
+            "devServerTarget": "angular-swagger-editor:serve"
           },
           "configurations": {
             "production": {
-              "devServerTarget": "swagger-editor:serve:production"
+              "devServerTarget": "angular-swagger-editor:serve:production"
             }
           }
         }
       }
     }},
-  "defaultProject": "swagger-editor"
+  "defaultProject": "angular-swagger-editor"
 }

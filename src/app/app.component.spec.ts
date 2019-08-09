@@ -16,16 +16,16 @@ describe('AppComponent', () => {
     expect(app).toBeTruthy();
   });
 
-  it(`should have as title 'swagger-editor'`, () => {
+  it(`should have as title 'angular-swagger-editor'`, () => {
     const fixture = TestBed.createComponent(AppComponent);
     const app = fixture.debugElement.componentInstance;
-    expect(app.title).toEqual('swagger-editor');
+    expect(app.title).toEqual('angular-swagger-editor');
   });
 
   it('should render title in a h1 tag', () => {
     const fixture = TestBed.createComponent(AppComponent);
     fixture.detectChanges();
     const compiled = fixture.debugElement.nativeElement;
-    expect(compiled.querySelector('h1').textContent).toContain('Welcome to swagger-editor!');
+    expect(compiled.querySelector('h1').textContent).toContain('Welcome to angular-swagger-editor!');
   });
 });
